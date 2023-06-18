@@ -1,0 +1,49 @@
+html, body {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .loading-animation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #116C6E;
+  }
+  
+  .loading-dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #fff;
+    margin: 0 4px;
+    animation: bounce 0.6s infinite alternate ease-in-out;
+  }
+  
+  .loading-dot:nth-child(2) {
+    animation-delay: 0.2s;
+  }
+  
+  .loading-dot:nth-child(3) {
+    animation-delay: 0.4s;
+  }
+  
+  @keyframes bounce {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(-20px);
+    }
+  }
+  
+  .image-container {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  img {
+    width: 100%;
+    height: auto;
+  }
+  

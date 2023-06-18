@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Cross-Platform Website</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <div class="loading-animation">
+        <div class="loading-dot"></div>
+        <div class="loading-dot"></div>
+        <div class="loading-dot"></div>
+      </div>
+  <div class="image-container">
+    <img src="images/aneesh portfolio1.jpg" alt="Image 1">
+    <img src="images/aneesh portfolio2.jpg" alt="Image 2">
+    <img src="images/aneesh portfolio3.jpg" alt="Image 3">
+    <img src="images/aneesh portfolio4.jpg" alt="Image 4">
+    <img src="images/aneesh portfolio5.jpg" alt="Image 5">
+    <img src="images/aneesh portfolio6.jpg" alt="Image 6">
+    <img src="images/aneesh portfolio7.jpg" alt="Image 7">
+    <img src="images/aneesh portfolio8.jpg" alt="Image 8">
+    <img src="images/aneesh portfolio9.jpg" alt="Image 9">
+    <img src="images/aneesh portfolio10.jpg" alt="Image 10">
+    <img src="images/aneesh portfolio11.jpg" alt="Image 11">
+  </div>
+  <script>
+    window.addEventListener("load", function () {
+      const loader = document.querySelector(".loading-animation");
+      setTimeout(function() {
+        loader.style.display = "none";
+      }, 3000);
+    });
+  </script>
+</body>
+</html>
